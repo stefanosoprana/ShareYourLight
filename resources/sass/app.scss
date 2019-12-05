@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import "variables/variables";
+@import "classToAdd/classToAdd";
+@import "common/common";
+
+// *** PARTIALS ***
+
+@import "partials/header";
+@import "partials/sectionStory";
+@import "partials/carousel";
+@import "partials/sectionBackgroundFix";
+@import "partials/sectionCommunity";
+@import "partials/footer";

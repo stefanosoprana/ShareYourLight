@@ -1,0 +1,65 @@
+.section-story {
+  width: 100%;
+  background-color: black;
+  position: relative;
+  @media screen and (max-width: $screen-md-min) {
+    float: left;
+  }
+  .image {
+    width: 100%;
+    @media screen and (min-width: $screen-md-min) {
+      display: flex;
+    }
+    &__box {
+      width: 25%;
+      height: 500px;
+      overflow: hidden;
+      transition: 0.4s;
+      position: relative;
+      @media screen and (max-width: $screen-md-min) {
+        float: left;
+        width: 50%;
+        height: 400px;
+      }
+      @media screen and (max-width: $screen-sm-min) {
+        height: 200px;
+      }
+      &__inside {
+        width: 100%;
+        height: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.4s;
+      }
+      &__text {
+        position: absolute;
+        transition: 0.4s;
+        h4 {
+          @include redBoxText;
+          @media screen and (max-width: $screen-sm-min) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .place-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background-color: $base-red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    span {
+      display: block;
+    }
+  }
+}

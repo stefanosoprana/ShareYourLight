@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+@mixin redBoxText {
+  display: -webkit-inline-box;
+  background: $base-red;
+  color: black;
+  padding: 4px;
+}

@@ -1,0 +1,66 @@
+@import "../variables/variables";
+
+.scale {
+  transform: scale(1.2);
+}
+
+.opacity {
+  opacity: 0.4;
+}
+
+.opacity-none {
+  opacity: 0;
+}
+
+.relative {
+  width: 25%;
+}
+
+.zoomIn {
+  width: 30%;
+}
+
+.slide-text {
+  bottom: 30px;
+  left: 20px;
+}
+
+.base-position {
+  left: 20px;
+  bottom: 0;
+}
+
+.selected {
+  color: gray;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.slideUp {
+  bottom: 100px;
+}
+
+.slideBase {
+  bottom: 0;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-relative-story {
+  position: relative;
+  top: 210px;
+}
+
+.rotate45 {
+  transform: rotate(45deg);
+}
+
+.rotate135 {
+  transform: rotate(135deg);
+  position: absolute;
+  top: 0;
+}

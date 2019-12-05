@@ -1,0 +1,21 @@
+#template-base {
+  .title {
+    h1 {
+      font-weight: bold;
+      color: black;
+    }
+  }
+  .subtitle {
+    padding: 20px 0;
+  }
+  .image {
+    padding-bottom: 20px;
+    &__item {
+      height: 800px;
+      background-size: cover;
+    }
+  }
+  .description {
+
+  }
+}

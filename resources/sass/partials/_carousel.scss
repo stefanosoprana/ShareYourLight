@@ -1,0 +1,92 @@
+.section-carousel {
+  width: 100%;
+  background-color: $base-gray;
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: $screen-md-min) {
+      padding-top: 30px;
+    }
+    &__principal {
+      h3 {
+        font-style: italic;
+        color: $base-red;
+        font-size: 28px;
+      }
+    }
+    &__subtitle {
+      padding: 30px 0;
+      @media screen and (max-width: $screen-md-min) {
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: $screen-sm-min) {
+        font-size: 9px;
+      }
+      .pipe {
+        padding: 0 20px;
+        font-size: 23px;
+        font-weight: bold;
+        @media screen and (max-width: $screen-sm-min) {
+          font-size: 15px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  &__main {
+    .carousel-inner {
+      .carousel-item {
+        .slide {
+          text-align: center;
+          font-style: italic;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 25px;
+          color: $base-darkGray;
+          small {
+            color: black;
+            a {
+              text-decoration: none;
+              color: gray;
+              &:hover {
+                color: $base-red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      bottom: -30px;
+      margin: 0;
+      li {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+      }
+      .active {
+        background-color: $base-red;
+      }
+    }
+  }
+}
+
+#firstCarousel {
+  .carousel {
+    min-height: 150px;
+  }
+}
+
+#secondCarousel {
+  .carousel {
+    min-height: 350px;
+  }
+  .section-carousel__title__subtitle {
+    @media screen and (max-width: $screen-sm-min) {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.footer {
+  padding: 20px;
+  color: $base-darkGray;
+  letter-spacing: .17px;
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  &__header {
+    display: flex;
+    @media screen and (max-width: $screen-sm-min){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media screen and (max-width: $screen-sm-min){
+        align-items: center;
+        text-align: center;
+      }
+      img {
+        max-width: 200px;
+      }
+      span:nth-child(2) {
+        padding: 20px 0;
+      }
+    }
+    &__right {
+      margin-left: auto;
+      @media screen and (max-width: $screen-sm-min){
+        margin-left: 0;
+      }
+      img {
+        width: 90px;
+        @media screen and (max-width: $screen-sm-min){
+          width: 70px;
+          padding: 20px 0;
+        }
+      }
+      span {
+        padding-right: 10px;
+      }
+    }
+  }
+  &__menu {
+    &__list {
+      padding: 20px 0;
+      ul {
+        text-align: center;
+        li {
+          a {
+            font-size: 11px;
+            text-decoration: none;
+            color: $base-darkGray;
+            font-weight: normal;
+          }
+          font-size: 13px;
+          display: inline-block;
+          list-style: none;
+          padding: 0 10px;
+          border-right: 1px solid $base-darkGray;
+          &:last-child {
+            border: 0px;
+          }
+        }
+      }
+    }
+    &__sublist {
+      text-align: center;
+    }
+  }
+}
+
+.post-footer {
+  text-align: center;
+  background: $base-gray;
+  padding: 20px;
+  letter-spacing: .17px;
+  line-height: 20px;
+  font-size: 12px;
+
+}

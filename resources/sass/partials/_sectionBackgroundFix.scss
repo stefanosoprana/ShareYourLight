@@ -1,0 +1,25 @@
+.section-background-fix {
+  height: 350px;
+  &__main {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    &__text {
+      position: absolute;
+      transition: 1s;
+      h4 {
+        @include redBoxText;
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      h4:last-child {
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+}
